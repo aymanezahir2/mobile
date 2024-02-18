@@ -1,21 +1,39 @@
 {
   "expo": {
-    "scheme": "acme",
+    "name": "mobileapp",
+    "slug": "mobileapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "orientation": "default",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
     "web": {
+      "bundler": "metro",
       "output": "static",
-      "bundler": "metro"
+      "favicon": "./src/assets/images/favicon.png"
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://n"
-        }
-      ]
+      "expo-router"
     ],
-    "name": "mobileapp",
-    "slug": "mobileapp"
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
